@@ -4,14 +4,43 @@
 /* Start */
 /* HERO */
 #home {
-  background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+  position: relative;
+  /* background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
   background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-  background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0px 2px 6px rgba(75, 97, 141, 0.24);
-  color: #FAFAFA;
-  min-height: 86vh; }
+  background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
+  background: 
+    url('../images/vectors/Skytrain.svg') no-repeat,
+    url('../images/vectors/CanadaLine.svg') no-repeat,
+    url('../images/vectors/Skytrain.svg') no-repeat,
+    url('../images/vectors/ExpoLine.svg') no-repeat,
+    -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%);
+    background: 
+    url('../images/vectors/Skytrain.svg') no-repeat,
+    url('../images/vectors/CanadaLine.svg') no-repeat,
+    url('../images/vectors/Skytrain.svg') no-repeat,
+    url('../images/vectors/ExpoLine.svg') no-repeat,
+    -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+    background: 
+    url('../images/vectors/Skytrain.svg') no-repeat,
+    url('../images/vectors/CanadaLine.svg') no-repeat,
+    url('../images/vectors/Skytrain.svg') no-repeat,
+    url('../images/vectors/ExpoLine.svg') no-repeat,
+    linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;;
+    background-size: 40%, 45%, 40%, 45%, cover;
+    /* background-position: absolute, absolute, absolute, absolute, center; */
+    animation: animateTrains 4s infinite;
+    color: #FAFAFA;
+    min-height: 86vh;
+  }
+
+
+  @keyframes animateTrains {
+    /* opposite directions */
+    /* 0% {background-position: 42em -24.25em, 0 0, 6em 68.85em, 56em 40em, 0 0; }
+    100% {background-position: -42em 24.25em, 0 0, 96em 16.92em, 56em 40em, 0 0;} */
+    0% {background-position: 42em -24.25em, 0 0, 100em 16.92em, 60em 40em, 0 0; }
+    100% {background-position: -42em 24.25em, 0 0, 10em 68.85em, 60em 40em, 0 0;}
+  }
 
 #home .double {
   max-width: 60rem; }
@@ -54,6 +83,10 @@
   /* kinda temp??? */ }
   .navbar .logo {
     height: 38px; }
+  .navbar .cucsc {
+    margin-left: 0.5em;
+    font-size: 1.8em;
+    font-family: "Lato", sans-serif; }
   .navbar .menu {
     background-color: transparent;
     margin-left: auto;
@@ -89,6 +122,20 @@
         opacity: 1; }
         .navbar .topmenu a:hover:before {
           right: 0; }
+
+.home-div {
+  background-color: white;
+  opacity: 0.6;
+  /* background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+  background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+  background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
+  padding: 5em;
+  margin: 5em;
+  margin-top: 15em;
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+}
 
 .title, .subtitle, .subearly, .emp {
   font-family: "Lato", sans-serif;
