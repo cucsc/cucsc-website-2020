@@ -131,14 +131,20 @@
   background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
   padding: 5em;
   margin: 5em;
-  margin-top: 15em;
   text-align: center;
   display: inline-block;
+  width: 50%;
 }
 
 .home-div-header {
   font-size: 28px;
   font-weight: lighter;
+}
+
+.home-div-logo {
+  margin: 20px 20px;
+  height: 60px;
+  width: 60px;
 }
 
 .title, .subtitle, .subearly, .emp {
