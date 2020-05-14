@@ -136,6 +136,11 @@
   display: inline-block;
 }
 
+.home-div-header {
+  font-size: 28px;
+  font-weight: lighter;
+}
+
 .title, .subtitle, .subearly, .emp {
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
