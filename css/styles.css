@@ -158,7 +158,14 @@
 }
 
 .home-div-social-media-links {
-  
+  margin-top: 30px;
+  position: absolute;
+  padding-left: 45%;
+}
+
+.home-div-social-media-icon {
+  height: 20px;
+  width: 20px;
 }
 
 .title, .subtitle, .subearly, .emp {
