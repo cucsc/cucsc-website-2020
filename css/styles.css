@@ -1251,7 +1251,7 @@ body {
   align-items: center;
   justify-content: center;
   /* margin-bottom: 2rem; */
-}
+ }
 
 #events .title, #sponsors .title, .emp, .day .title, .event .title:first-child, #speakers .title, #workshops .title, .accommodationsintro .title, #accommodations .title, #aboutus .title, .modal-content .title {
   background: linear-gradient(to right, #31CFDA, #67DDA6);
