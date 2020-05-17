@@ -3,50 +3,43 @@
 /* Mixins */
 /* Start */
 /* HERO */
+
 #home {
   position: relative;
-  /* background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+  background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
   background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-  background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
-  background: 
-    url('../images/vectors/Skytrain.svg') no-repeat,
-    url('../images/vectors/CanadaLine.svg') no-repeat,
-    url('../images/vectors/Skytrain.svg') no-repeat,
-    url('../images/vectors/ExpoLine.svg') no-repeat,
-    -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%);
-    background: 
-    url('../images/vectors/Skytrain.svg') no-repeat,
-    url('../images/vectors/CanadaLine.svg') no-repeat,
-    url('../images/vectors/Skytrain.svg') no-repeat,
-    url('../images/vectors/ExpoLine.svg') no-repeat,
-    -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-    background: 
-    url('../images/vectors/Skytrain.svg') no-repeat,
-    url('../images/vectors/CanadaLine.svg') no-repeat,
-    url('../images/vectors/Skytrain.svg') no-repeat,
-    url('../images/vectors/ExpoLine.svg') no-repeat,
-    linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;;
-    background-size: 40%, 45%, 40%, 45%, cover;
-    /* background-position: absolute, absolute, absolute, absolute, center; */
-    animation: animateTrains 4s infinite;
-    color: #FAFAFA;
-    min-height: 86vh;
+  background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+  color: #FAFAFA;
+  height: 100vh;
+  overflow: hidden;
   }
 
-
-  @keyframes animateTrains {
-    /* opposite directions */
-    /* 0% {background-position: 42em -24.25em, 0 0, 6em 68.85em, 56em 40em, 0 0; }
-    100% {background-position: -42em 24.25em, 0 0, 96em 16.92em, 56em 40em, 0 0;} */
-    0% {background-position: 42em -24.25em, 0 0, 100em 16.92em, 60em 40em, 0 0; }
-    100% {background-position: -42em 24.25em, 0 0, 10em 68.85em, 60em 40em, 0 0;}
+  #skytrain-expo-bg {
+    position: absolute;
+    width: 60%;
+    bottom: -10%;
+    right: -1%;
+    overflow: hidden;
   }
+  
+  #skytrain-canada-bg {
+    position: absolute;
+    width: 60%;
+    left: -1%;
+    top: -10%;
+  }
+
+  @media (max-width: 650px){
+    .skytrain-bg {
+        display: none;
+    }
+}
 
 #home .double {
   max-width: 60rem; }
 
 #home .right > * {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;}
 #link-foot-here a{
   color: #67DDA6;
 }
@@ -83,7 +76,7 @@
   /* kinda temp??? */ }
   .navbar .logo {
     height: 38px; }
-  .navbar .cucsc {
+  .navbar .navbar-title {
     margin-left: 0.5em;
     font-size: 1.8em;
     font-family: "Lato", sans-serif; }
@@ -131,9 +124,11 @@
   background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
   padding: 5em;
   margin: 5em;
+  margin-top: 10em;
   text-align: center;
   display: inline-block;
   width: 50%;
+  z-index: 1;
 }
 
 .home-div-header {
@@ -1255,7 +1250,8 @@ body {
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem; }
+  /* margin-bottom: 2rem; */
+}
 
 #events .title, #sponsors .title, .emp, .day .title, .event .title:first-child, #speakers .title, #workshops .title, .accommodationsintro .title, #accommodations .title, #aboutus .title, .modal-content .title {
   background: linear-gradient(to right, #31CFDA, #67DDA6);
