@@ -1601,4 +1601,7 @@ form.waSearch input[type=text] + .qrcode-text-btn {
   color: #2A7E78;
   text-decoration: underline;
 }
+
+#mc_embed_signup div#mce-error-response{
+  color: #e85c41;
 }
