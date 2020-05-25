@@ -20,12 +20,19 @@
   position: absolute;
   width: 60%;
 }
+
+@media (max-width: 800px){
+  .skytrain-bg {
+      display: none;
+  }
+}
+
 #skytrain-canada-bg {
   left: -1%;
   top: -10%;
 }
 #skytrain-expo-bg {
-  bottom: -30%;
+  bottom: -40%;
   right: -30%;
 }
 
@@ -86,14 +93,6 @@
 }
 /* end background skytrain styles and animation */
 
-
-
-
-  @media (max-width: 650px){
-    .skytrain-bg {
-        display: none;
-    }
-}
 
 #home .double {
   max-width: 60rem; }
