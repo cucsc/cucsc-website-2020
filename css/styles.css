@@ -3,21 +3,43 @@
 /* Mixins */
 /* Start */
 /* HERO */
+
 #home {
+  position: relative;
   background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
   background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
   background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0px 2px 6px rgba(75, 97, 141, 0.24);
   color: #FAFAFA;
-  min-height: 86vh; }
+  height: 100vh;
+  overflow: hidden;
+  }
+
+  #skytrain-expo-bg {
+    position: absolute;
+    width: 60%;
+    bottom: -10%;
+    right: -1%; /* -1 so that the edge of the line won't get cut off */
+    overflow: hidden;
+  }
+  
+  #skytrain-canada-bg {
+    position: absolute;
+    width: 60%;
+    left: -1%;
+    top: -10%;
+  }
+
+  @media (max-width: 650px){
+    .skytrain-bg {
+        display: none;
+    }
+}
 
 #home .double {
   max-width: 60rem; }
 
 #home .right > * {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;}
 #link-foot-here a{
   color: #67DDA6;
 }
@@ -54,6 +76,10 @@
   /* kinda temp??? */ }
   .navbar .logo {
     height: 38px; }
+  .navbar .navbar-title {
+    margin-left: 0.5em;
+    font-size: 1.8em;
+    font-family: "Lato", sans-serif; }
   .navbar .menu {
     background-color: transparent;
     margin-left: auto;
@@ -89,6 +115,53 @@
         opacity: 1; }
         .navbar .topmenu a:hover:before {
           right: 0; }
+
+.home-div {
+  background: linear-gradient(0deg, #2A7E78, #2A7E78), #FFFFFF;
+  color: white;
+  /* background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+  background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+  background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
+  padding: 5em;
+  margin: 5em;
+  margin-top: 10em;
+  text-align: center;
+  display: inline-block;
+  width: 50%;
+  z-index: 1;
+}
+
+.home-div-header {
+  font-size: 28px;
+  font-weight: lighter;
+}
+
+.home-div-logo {
+  margin: 20px 20px;
+  height: 60px;
+  width: 60px;
+}
+
+.home-div-text {
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 22px;
+}
+
+.home-div-form {
+
+}
+
+.home-div-social-media-links {
+  margin-top: 30px;
+  position: absolute;
+  padding-left: 45%;
+}
+
+.home-div-social-media-icon {
+  height: 20px;
+  width: 20px;
+}
 
 .title, .subtitle, .subearly, .emp {
   font-family: "Lato", sans-serif;
