@@ -1577,3 +1577,8 @@ form.waSearch input[type=text] + .qrcode-text-btn {
   clear:left;
   font:14px "Lato",Helvetica,Arial,sans-serif;
 }
+
+#mc-embedded-subscribe{
+  font:"Lato",Helvetica,Arial,sans-serif;
+  background-color:
+}
