@@ -25,37 +25,64 @@
   top: -10%;
 }
 #skytrain-expo-bg {
-  bottom: -10%;
-  right: -1%; /* -1 so that the edge of the line won't get cut off */
-  overflow: hidden;
+  bottom: -30%;
+  right: -30%;
 }
 
-.train {
+#canada-train {
   position:relative;
-  -webkit-animation: diagonal-train 20s infinite;
-  -moz-animation: diagonal-train 20s infinite;
-  -o-animation: diagonal-train 20s infinite;
-  animation: diagonal-train 20s infinite;
+  -webkit-animation: diagonal-down 20s infinite;
+  -moz-animation: diagonal-down 20s infinite;
+  -o-animation: diagonal-down 20s infinite;
+  animation: diagonal-down 20s infinite;
 }
-@-webkit-keyframes diagonal-train {
-    0%       { transform: translatex(0px) translatey(0px) }
-    50%      { transform: translatex(-2000px) translatey(1200px); }
-    100%     { transform: translatex(0px) translatey(0px) }
+@-webkit-keyframes diagonal-down {
+  0%       { transform: translatex(0px) translatey(0px) }
+  50%      { transform: translatex(-2000px) translatey(1200px); }
+  100%     { transform: translatex(0px) translatey(0px) }
 }
-@-moz-keyframes diagonal-train {
-    0%       { transform: translatex(0px) translatey(0px) }
-    50%      { transform: translatex(-2000px) translatey(1200px); }
-    100%     { transform: translatex(0px) translatey(0px) }
+@-moz-keyframes diagonal-down {
+  0%       { transform: translatex(0px) translatey(0px) }
+  50%      { transform: translatex(-2000px) translatey(1200px); }
+  100%     { transform: translatex(0px) translatey(0px) }
 }
-@-o-keyframes diagonal-train {
-    0%       { transform: translatex(0px) translatey(0px) }
-    50%      { transform: translatex(-2000px) translatey(1200px); }
-    100%     { transform: translatex(0px) translatey(0px) }
+@-o-keyframes diagonal-down {
+  0%       { transform: translatex(0px) translatey(0px) }
+  50%      { transform: translatex(-2000px) translatey(1200px); }
+  100%     { transform: translatex(0px) translatey(0px) }
 }
-@keyframes diagonal-train {
-    0%       { transform: translatex(0px) translatey(0px) }
-    50%      { transform: translatex(-2000px) translatey(1200px); }
-    100%     { transform: translatex(0px) translatey(0px) }
+@keyframes diagonal-down {
+  0%       { transform: translatex(0px) translatey(0px) }
+  50%      { transform: translatex(-2000px) translatey(1200px); }
+  100%     { transform: translatex(0px) translatey(0px) }
+}
+
+#expo-train {
+  position:relative;
+  -webkit-animation: diagonal-up 20s infinite;
+  -moz-animation: diagonal-up 20s infinite;
+  -o-animation: diagonal-up 20s infinite;
+  animation: diagonal-up 20s infinite;
+}
+@-webkit-keyframes diagonal-up {
+  0%       { transform: translatex(-2000px) translatey(1200px); }
+  50%      { transform: translatex(0px) translatey(0px) }
+  100%     { transform: translatex(-2000px) translatey(1200px); }
+}
+@-moz-keyframes diagonal-up {
+  0%       { transform: translatex(-2000px) translatey(1200px); }
+  50%      { transform: translatex(0px) translatey(0px) }
+  100%     { transform: translatex(-2000px) translatey(1200px); }
+}
+@-o-keyframes diagonal-up {
+  0%       { transform: translatex(-2000px) translatey(1200px); }
+  50%      { transform: translatex(0px) translatey(0px) }
+  100%     { transform: translatex(-2000px) translatey(1200px); }
+}
+@keyframes diagonal-up {
+  0%       { transform: translatex(-2000px) translatey(1200px); }
+  50%      { transform: translatex(0px) translatey(0px) }
+  100%     { transform: translatex(-2000px) translatey(1200px); }
 }
 /* end background skytrain styles and animation */
 
