@@ -14,20 +14,53 @@
   overflow: hidden;
   }
 
-  #skytrain-expo-bg {
-    position: absolute;
-    width: 60%;
-    bottom: -10%;
-    right: -1%; /* -1 so that the edge of the line won't get cut off */
-    overflow: hidden;
-  }
-  
-  #skytrain-canada-bg {
-    position: absolute;
-    width: 60%;
-    left: -1%;
-    top: -10%;
-  }
+/* start background skytrain styles and animation */
+
+.skytrain-bg {
+  position: absolute;
+  width: 60%;
+}
+#skytrain-canada-bg {
+  left: -1%;
+  top: -10%;
+}
+#skytrain-expo-bg {
+  bottom: -10%;
+  right: -1%; /* -1 so that the edge of the line won't get cut off */
+  overflow: hidden;
+}
+
+.train {
+  position:relative;
+  -webkit-animation: diagonal-train 20s infinite;
+  -moz-animation: diagonal-train 20s infinite;
+  -o-animation: diagonal-train 20s infinite;
+  animation: diagonal-train 20s infinite;
+}
+@-webkit-keyframes diagonal-train {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(-2000px) translatey(1200px); }
+    100%     { transform: translatex(0px) translatey(0px) }
+}
+@-moz-keyframes diagonal-train {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(-2000px) translatey(1200px); }
+    100%     { transform: translatex(0px) translatey(0px) }
+}
+@-o-keyframes diagonal-train {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(-2000px) translatey(1200px); }
+    100%     { transform: translatex(0px) translatey(0px) }
+}
+@keyframes diagonal-train {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(-2000px) translatey(1200px); }
+    100%     { transform: translatex(0px) translatey(0px) }
+}
+/* end background skytrain styles and animation */
+
+
+
 
   @media (max-width: 650px){
     .skytrain-bg {
