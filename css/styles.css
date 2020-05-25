@@ -21,7 +21,7 @@
     right: -1%; /* -1 so that the edge of the line won't get cut off */
     overflow: hidden;
   }
-  
+
   #skytrain-canada-bg {
     position: absolute;
     width: 60%;
@@ -1569,3 +1569,11 @@ form.waSearch input[type=text] + .qrcode-text-btn {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+
+
+/* Mailchimp Signup Form Styles */
+#mc_embed_signup{
+  clear:left;
+  font:14px "Lato",Helvetica,Arial,sans-serif;
+}
