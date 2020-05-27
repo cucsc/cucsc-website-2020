@@ -1580,7 +1580,6 @@ form.waSearch input[type=text] + .qrcode-text-btn {
 
 #mc-embedded-subscribe{
   font:"Lato",Helvetica,Arial,sans-serif;
-  background-color:
 }
 
 #mc_embed_signup div#mce-responses{
@@ -1610,4 +1609,5 @@ form.waSearch input[type=text] + .qrcode-text-btn {
     clear: both;
     background-color: #45BD96;
     color: #FFFFFF;
+    font-family:"Lato",Helvetica,Arial,sans-serif;
   }
