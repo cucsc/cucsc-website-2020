@@ -10,7 +10,7 @@
   background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
   background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
   color: #FAFAFA;
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
   }
 
@@ -585,8 +585,9 @@
 
 /* Contact Us */
 #contact {
-  color: #4B618D;
-  font-family: "Oswald", sans-serif;
+  background-color: #0D242C;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
   letter-spacing: 1px;
   text-align: center; }
   #contact .social {
