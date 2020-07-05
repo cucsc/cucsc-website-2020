@@ -1,0 +1,24 @@
+{
+  "name": "cucsc-website-2020-2021",
+  "version": "1.0.0",
+  "description": "This is the repository for the temporary landing page for the Canadian Undergraduate Computer Science Conference 2020. This README will document all required dependencies and instructions to run the repo on your local machine.",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cucsc/cucsc-website-2020-2021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cucsc/cucsc-website-2020-2021/issues"
+  },
+  "homepage": "https://github.com/cucsc/cucsc-website-2020-2021#readme"
+}
