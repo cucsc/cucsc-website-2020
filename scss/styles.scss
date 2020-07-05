@@ -1,0 +1,82 @@
+#home {
+    position: relative;
+    background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+    background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+    background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+    color: #FAFAFA;
+    height: 120vh;
+    overflow: hidden;
+
+    /* start background skytrain styles and animation */
+
+    .skytrain-bg {
+        position: absolute;
+        width: 60%;
+
+        #skytrain-canada-bg {
+            left: -1%;
+            top: -10%;
+        }
+          #skytrain-expo-bg {
+            bottom: -40%;
+            right: -30%;
+          }
+    }
+  
+    @media (max-width: 800px){
+        .skytrain-bg {
+            display: none;
+        }
+    }
+  
+  #canada-train {
+    position:relative;
+    -webkit-animation: diagonal-down 10s infinite;
+    -moz-animation: diagonal-down 10s infinite;
+    -o-animation: diagonal-down 10s infinite;
+    animation: diagonal-down 10s infinite;
+  }
+  @-webkit-keyframes diagonal-down {
+    0%       { transform: translatex(1200px) translatey(-720px) }
+    100%      { transform: translatex(-3200px) translatey(1800px); }
+  }
+  @-moz-keyframes diagonal-down {
+    0%       { transform: translatex(1200px) translatey(-720px) }
+    100%      { transform: translatex(-3200px) translatey(1800px); }
+  }
+  @-o-keyframes diagonal-down {
+    0%       { transform: translatex(1200px) translatey(-720px) }
+    100%      { transform: translatex(-3200px) translatey(1800px); }
+  }
+  @keyframes diagonal-down {
+    0%       { transform: translatex(1200px) translatey(-720px) }
+    100%      { transform: translatex(-3200px) translatey(1800px); }
+  }
+  
+  #expo-train {
+    position:relative;
+    -webkit-animation: diagonal-up 10s infinite;
+    -moz-animation: diagonal-up 10s infinite;
+    -o-animation: diagonal-up 10s infinite;
+    animation: diagonal-up 10s infinite;
+  }
+  @-webkit-keyframes diagonal-up {
+    100%       { transform: translatex(1200px) translatey(-720px) }
+    0%      { transform: translatex(-3200px) translatey(1800px); }
+  }
+  @-moz-keyframes diagonal-up {
+    100%       { transform: translatex(1200px) translatey(-720px) }
+    0%      { transform: translatex(-3200px) translatey(1800px); }
+  }
+  @-o-keyframes diagonal-up {
+    100%       { transform: translatex(1200px) translatey(-720px) }
+    0%      { transform: translatex(-3200px) translatey(1800px); }
+  }
+  @keyframes diagonal-up {
+    100%       { transform: translatex(1200px) translatey(-720px) }
+    0%      { transform: translatex(-3200px) translatey(1800px); }
+  }
+  /* end background skytrain styles and animation */
+
+
+}
