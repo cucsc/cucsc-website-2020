@@ -52,6 +52,20 @@ body {
   body .unilogo {
     max-width: 10em;
     margin-top: 3em; }
+  body .double {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 1em;
+    max-width: 60rem; }
   body #home {
     position: relative;
     background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
@@ -279,3 +293,21 @@ body {
       max-width: 60rem; }
       body #events .double .emp {
         font-size: 1.6rem; }
+    body #events div * {
+      margin: 0; }
+    @media only screen and (min-width: 60rem) {
+      body #events .navbar .topmenu {
+        visibility: visible;
+        display: inline-block; }
+      body #events .navbar .menu {
+        visibility: hidden;
+        display: none; }
+      body #events .double .pillar {
+        width: 50%; }
+      body #events .right {
+        padding-left: 6vw; }
+      body #events .roomdesc.right {
+        padding-left: 3vw; }
+      body #events .scrollgroup {
+        margin-left: auto;
+        margin-right: 8vw; } }

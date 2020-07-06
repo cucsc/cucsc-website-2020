@@ -77,7 +77,24 @@ body {
     max-width: 10em;
     margin-top: 3em; }
 
-  #home {
+  
+  // only used inside .events right now  
+  .double {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 1em;
+  max-width: 60rem; }
+
+    #home {
     position: relative;
     background: -webkit-linear-gradient(142.9deg, $strong-blue -7.22%, $bright-cyan 114.47%), $white;
     background: -o-linear-gradient(142.9deg, $strong-blue -7.22%, $bright-cyan 114.47%), $white;
@@ -368,5 +385,30 @@ body {
       }
     
     }
+
+    div * {
+      margin: 0; }
+    @media only screen and (min-width: 60rem) {
+      .navbar .topmenu {
+        visibility: visible;
+        display: inline-block; }
+    
+      .navbar .menu {
+        visibility: hidden;
+        display: none; }
+    
+      .double .pillar {
+        width: 50%; }
+    
+      .right {
+        padding-left: 6vw; }
+    
+      .roomdesc.right {
+        padding-left: 3vw; }
+    
+      .scrollgroup {
+        margin-left: auto;
+        margin-right: 8vw; } }
+    
   }
 }
