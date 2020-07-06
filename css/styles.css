@@ -22,6 +22,12 @@ body {
     align-items: center;
     justify-content: center;
     /* margin-bottom: 2rem; */ }
+  body #events .title, body #sponsors .title, body .emp, body .day .title, body .event .title:first-child, body #speakers .title, body #workshops .title, body .accommodationsintro .title, body #accommodations .title, body #aboutus .title, body .modal-content .title {
+    background: linear-gradient(to right, #31CFDA, #67DDA6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: auto;
+    text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32); }
   body .title, body .subtitle, body .subearly, body .emp {
     font-family: "Lato", sans-serif;
     letter-spacing: 1px;
@@ -38,6 +44,9 @@ body {
     text-decoration: none; }
     body a a:hover {
       color: #4B618D; }
+  body .title {
+    margin-top: 0;
+    margin-bottom: 0; }
   body .subearly {
     margin-top: 1em; }
   body .unilogo {
@@ -130,10 +139,10 @@ body {
           right: 0; }
     body #home .home-div {
       background: linear-gradient(0deg, #2A7E78, #2A7E78), #FFFFFF;
-      color: white;
-      /* background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-      background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-      background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
+      color: #FFFFFF;
+      /* background: -webkit-linear-gradient(142.9deg, $strong-blue -7.22%, $bright-cyan 114.47%), $white;
+      background: -o-linear-gradient(142.9deg, $strong-blue -7.22%, $bright-cyan 114.47%), $white;
+      background: linear-gradient(142.9deg, $strong-blue -7.22%, $bright-cyan 114.47%), $white; */
       padding: 5em;
       margin: 5em;
       margin-top: 10em;
@@ -247,6 +256,10 @@ body {
     margin: auto; }
     body #events .title {
       font-size: 2.4em; }
+      body #events .title .title:first-child {
+        font-size: 2.4em; }
+      body #events .title .event .title:last-child {
+        font-size: 1.32rem; }
     body #events p {
       margin-bottom: 2em;
       color: #4B618D; }

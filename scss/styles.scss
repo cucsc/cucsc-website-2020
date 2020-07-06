@@ -1,5 +1,12 @@
-@import "colors";
 @import url("https://fonts.googleapis.com/css?family=Lato|Oswald:300");
+
+// colors
+$white: #FFFFFF;
+$white-primary: #FAFAFA;
+$strong-blue: #175163;
+$bright-cyan: #45BD96;
+$strong-cyan: #2A7E78;
+
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +31,15 @@ body {
     align-items: center;
     justify-content: center;
     /* margin-bottom: 2rem; */
-   }
+  }
+
+  // TODO: refactor
+  #events .title, #sponsors .title, .emp, .day .title, .event .title:first-child, #speakers .title, #workshops .title, .accommodationsintro .title, #accommodations .title, #aboutus .title, .modal-content .title {
+    background: linear-gradient(to right, #31CFDA, #67DDA6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: auto;
+    text-shadow: 0 3px 6px rgba(103, 221, 166, 0.32); }
 
   .title, .subtitle, .subearly, .emp {
     font-family: "Lato", sans-serif;
@@ -48,6 +63,11 @@ body {
     a:hover {
       color: #4B618D;
     }
+  }
+
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .subearly {
@@ -315,6 +335,12 @@ body {
 
     .title {
       font-size: 2.4em; 
+      .title:first-child {
+        font-size: 2.4em;
+      }
+      .event .title:last-child {
+        font-size: 1.32rem;
+      }
     }
 
     p {
