@@ -1,61 +1,176 @@
-#home {
-  position: relative;
-  background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-  background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-  background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
-  color: #FAFAFA;
-  height: 120vh;
-  overflow: hidden;
-  /* start background skytrain styles and animation */
-  /* end background skytrain styles and animation */ }
-  #home .skytrain-bg {
-    position: absolute;
-    width: 60%; }
-    #home .skytrain-bg #skytrain-canada-bg {
-      left: -1%;
-      top: -10%; }
-    #home .skytrain-bg #skytrain-expo-bg {
+@import url("https://fonts.googleapis.com/css?family=Lato|Oswald:300");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #FAFAFA; }
+  body #home, body #events, body #ispeakers, body #sponsors, body #earlybird, body #contact, body #schedulehero, body #webapphero, body #eventshero, body #spwhero, body #accommodationshero, body .accommodationsintro, body #accommodations, body #aboutushero, body #aboutus, body .modal-content, body #mobilemenu {
+    padding: 1rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 2rem; */ }
+  body .title, body .subtitle, body .subearly, body .emp {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 6px rgba(75, 97, 141, 0.32);
+    display: block; }
+  body .subtitle {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1em; }
+    body .subtitle h2 {
+      font-size: 1.6rem; }
+  body a {
+    color: #FAFAFA;
+    text-decoration: none; }
+    body a a:hover {
+      color: #4B618D; }
+  body .subearly {
+    margin-top: 1em; }
+  body .unilogo {
+    max-width: 10em;
+    margin-top: 3em; }
+  body #home {
+    position: relative;
+    background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+    background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+    background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+    color: #FAFAFA;
+    height: 120vh;
+    overflow: hidden;
+    /* Remove these 2 rules after 2019 info is added, add top:0 to .navbar */
+    /* Override navbar top position for pages with a page-top-message */
+    /* An override class to inset the top position for pages without top message */
+    /* navbar (for now) */
+    /* home-div */
+    /* start background skytrain styles and animation */
+    /* end background skytrain styles and animation */ }
+    body #home .title {
+      font-size: 5rem;
+      line-height: 1;
+      margin-bottom: 0.5em;
+      text-align: center; }
+    body #home .double {
+      max-width: 60rem; }
+    body #home .right > * {
+      margin-bottom: 2em; }
+    body #home .navbar-height-with-top-message {
+      top: 32px; }
+    body #home .navbar-height-no-top-message {
+      top: 0; }
+    body #home .navbar {
+      background-color: #0D242C;
+      -webkit-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 14px 11px 0px rgba(0, 0, 0, 0.3);
+      height: 6vh;
+      min-height: 48px;
+      position: absolute;
+      /* Change back to "top: 0" after outdated info banner is removed */
+      left: 0;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      z-index: 5; }
+      body #home .navbar .logo {
+        height: 38px; }
+      body #home .navbar .navbar-title {
+        margin-left: 0.5em;
+        font-size: 1.8em;
+        font-family: "Lato", sans-serif; }
+      body #home .navbar .menu {
+        background-color: transparent;
+        margin-left: auto;
+        color: #FAFAFA;
+        border: none;
+        font-size: 1.8em;
+        visibility: visible; }
+      body #home .navbar .topmenu {
+        /* visibility: hidden; */
+        margin-left: auto;
+        margin-right: 0.5em;
+        font-family: "Lato", sans-serif; }
+        body #home .navbar .topmenu a {
+          padding: 0;
+          margin-right: 1.6em;
+          font-size: 1.32rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          position: relative;
+          z-index: 2; }
+        body #home .navbar .topmenu .navbar .topmenu a:before {
+          content: '';
+          position: absolute;
+          height: 2px;
+          z-index: -2;
+          left: 0;
+          right: 100%;
+          bottom: 0;
+          background: #0D242C;
+          transition: right ease-out 0.3s; }
+        body #home .navbar .topmenu .navbar .topmenu a:hover {
+          color: #0D242C;
+          opacity: 1; }
+        body #home .navbar .topmenu .navbar .topmenu a:hover:before {
+          right: 0; }
+    body #home .home-div {
+      background: linear-gradient(0deg, #2A7E78, #2A7E78), #FFFFFF;
+      color: white;
+      /* background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+      background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+      background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
+      padding: 5em;
+      margin: 5em;
+      margin-top: 10em;
+      text-align: center;
+      display: inline-block;
+      width: 50%;
+      z-index: 1; }
+      body #home .home-div .home-div-header {
+        font-size: 28px;
+        font-weight: lighter; }
+      body #home .home-div .home-div-logo {
+        margin: 20px 20px;
+        height: 60px;
+        width: 60px; }
+      body #home .home-div .home-div-text {
+        font-size: 14px;
+        font-weight: lighter;
+        line-height: 22px; }
+      body #home .home-div .home-div-social-media-links {
+        margin-top: 30px;
+        position: absolute;
+        padding-left: 45%; }
+      body #home .home-div .home-div-social-media-icon {
+        height: 20px;
+        width: 20px; }
+    body #home .skytrain-bg {
+      position: absolute;
+      width: 60%; }
+    body #home #skytrain-expo-bg {
       bottom: -40%;
       right: -30%; }
-  @media (max-width: 800px) {
-    #home .skytrain-bg {
-      display: none; } }
-  #home #canada-train {
-    position: relative;
-    -webkit-animation: diagonal-down 10s infinite;
-    -moz-animation: diagonal-down 10s infinite;
-    -o-animation: diagonal-down 10s infinite;
-    animation: diagonal-down 10s infinite; }
-
-@-webkit-keyframes diagonal-down {
-  0% {
-    transform: translatex(1200px) translatey(-720px); }
-  100% {
-    transform: translatex(-3200px) translatey(1800px); } }
-
-@-moz-keyframes diagonal-down {
-  0% {
-    transform: translatex(1200px) translatey(-720px); }
-  100% {
-    transform: translatex(-3200px) translatey(1800px); } }
-
-@-o-keyframes diagonal-down {
-  0% {
-    transform: translatex(1200px) translatey(-720px); }
-  100% {
-    transform: translatex(-3200px) translatey(1800px); } }
-
-@keyframes diagonal-down {
-  0% {
-    transform: translatex(1200px) translatey(-720px); }
-  100% {
-    transform: translatex(-3200px) translatey(1800px); } }
-  #home #expo-train {
-    position: relative;
-    -webkit-animation: diagonal-up 10s infinite;
-    -moz-animation: diagonal-up 10s infinite;
-    -o-animation: diagonal-up 10s infinite;
-    animation: diagonal-up 10s infinite; }
+      body #home #skytrain-expo-bg #expo-train {
+        position: relative;
+        -webkit-animation: diagonal-up 10s infinite;
+        -moz-animation: diagonal-up 10s infinite;
+        -o-animation: diagonal-up 10s infinite;
+        animation: diagonal-up 10s infinite; }
 
 @-webkit-keyframes diagonal-up {
   100% {
@@ -80,3 +195,74 @@
     transform: translatex(1200px) translatey(-720px); }
   0% {
     transform: translatex(-3200px) translatey(1800px); } }
+    body #home #skytrain-canada-bg {
+      left: -1%;
+      top: -10%; }
+      body #home #skytrain-canada-bg #canada-train {
+        position: relative;
+        -webkit-animation: diagonal-down 10s infinite;
+        -moz-animation: diagonal-down 10s infinite;
+        -o-animation: diagonal-down 10s infinite;
+        animation: diagonal-down 10s infinite; }
+
+@-webkit-keyframes diagonal-down {
+  0% {
+    transform: translatex(1200px) translatey(-720px); }
+  100% {
+    transform: translatex(-3200px) translatey(1800px); } }
+
+@-moz-keyframes diagonal-down {
+  0% {
+    transform: translatex(1200px) translatey(-720px); }
+  100% {
+    transform: translatex(-3200px) translatey(1800px); } }
+
+@-o-keyframes diagonal-down {
+  0% {
+    transform: translatex(1200px) translatey(-720px); }
+  100% {
+    transform: translatex(-3200px) translatey(1800px); } }
+
+@keyframes diagonal-down {
+  0% {
+    transform: translatex(1200px) translatey(-720px); }
+  100% {
+    transform: translatex(-3200px) translatey(1800px); } }
+    @media (max-width: 800px) {
+      body #home .skytrain-bg {
+        display: none; } }
+  body p {
+    line-height: 2;
+    font-size: 1.06rem;
+    max-width: 46rem;
+    color: #4B618D; }
+  body .pillar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em 0; }
+    body .pillar p {
+      margin: 0; }
+  body #events {
+    max-width: 60rem;
+    margin: auto; }
+    body #events .title {
+      font-size: 2.4em; }
+    body #events p {
+      margin-bottom: 2em;
+      color: #4B618D; }
+    body #events .double {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 1em;
+      max-width: 60rem; }
+      body #events .double .emp {
+        font-size: 1.6rem; }

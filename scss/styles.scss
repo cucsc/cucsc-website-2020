@@ -1,4 +1,62 @@
-#home {
+@import url("https://fonts.googleapis.com/css?family=Lato|Oswald:300");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #FAFAFA;
+
+  #home, #events, #ispeakers, #sponsors, #earlybird, #contact, #schedulehero, #webapphero, #eventshero, #spwhero, #accommodationshero, .accommodationsintro, #accommodations, #aboutushero, #aboutus, .modal-content, #mobilemenu {
+    padding: 1rem;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 2rem; */
+   }
+
+  .title, .subtitle, .subearly, .emp {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 6px rgba(75, 97, 141, 0.32);
+    display: block;
+  }
+
+  .subtitle {
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1em;
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  a {
+    color: #FAFAFA;
+    text-decoration: none;
+    a:hover {
+      color: #4B618D;
+    }
+  }
+
+  .subearly {
+    margin-top: 1em; }
+  
+  .unilogo {
+    max-width: 10em;
+    margin-top: 3em; }
+
+  #home {
     position: relative;
     background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
     background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
@@ -7,20 +65,214 @@
     height: 120vh;
     overflow: hidden;
 
+    .title {
+      font-size: 5rem;
+      line-height: 1;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+
+    .double {
+      max-width: 60rem;
+    }
+
+    .right > * {
+      margin-bottom: 2em;
+    }
+
+    /* Remove these 2 rules after 2019 info is added, add top:0 to .navbar */
+    /* Override navbar top position for pages with a page-top-message */
+    .navbar-height-with-top-message {
+      top: 32px;
+    }
+    /* An override class to inset the top position for pages without top message */
+    .navbar-height-no-top-message {
+      top: 0;
+    }
+    /* navbar (for now) */
+    .navbar {
+      background-color: #0D242C;
+      -webkit-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.30);
+      -moz-box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.30);
+      box-shadow: 0px 14px 11px 0px rgba(0,0,0,0.30);
+      height: 6vh;
+      min-height: 48px;
+      position: absolute;
+      /* Change back to "top: 0" after outdated info banner is removed */
+      left: 0;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      z-index: 5;
+
+      .logo {
+        height: 38px;
+      }
+      
+      .navbar-title {
+        margin-left: 0.5em;
+        font-size: 1.8em;
+        font-family: "Lato", sans-serif;
+      }
+      
+      .menu {
+        background-color: transparent;
+        margin-left: auto;
+        color: #FAFAFA;
+        border: none;
+        font-size: 1.8em;
+        visibility: visible;
+      }
+      
+      .topmenu {
+        /* visibility: hidden; */
+        margin-left: auto;
+        margin-right: 0.5em;
+        font-family: "Lato", sans-serif;
+
+        a {
+          padding: 0;
+          margin-right: 1.6em;
+          font-size: 1.32rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          position: relative;
+          z-index: 2;
+        }
+
+        .navbar .topmenu a:before {
+          content: '';
+          position: absolute;
+          height: 2px;
+          z-index: -2;
+          left: 0;
+          right: 100%;
+          bottom: 0;
+          background: #0D242C;
+          transition: right ease-out 0.3s;
+        }
+
+        .navbar .topmenu a:hover {
+          color: #0D242C;
+          opacity: 1;
+        }
+
+        .navbar .topmenu a:hover:before {
+          right: 0;
+        }
+      
+      }
+    }
+
+    /* home-div */
+    .home-div {
+      background: linear-gradient(0deg, #2A7E78, #2A7E78), #FFFFFF;
+      color: white;
+      /* background: -webkit-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+      background: -o-linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF;
+      background: linear-gradient(142.9deg, #175163 -7.22%, #45BD96 114.47%), #FFFFFF; */
+      padding: 5em;
+      margin: 5em;
+      margin-top: 10em;
+      text-align: center;
+      display: inline-block;
+      width: 50%;
+      z-index: 1;
+
+      .home-div-header {
+        font-size: 28px;
+        font-weight: lighter;
+      }
+      
+      .home-div-logo {
+        margin: 20px 20px;
+        height: 60px;
+        width: 60px;
+      }
+      
+      .home-div-text {
+        font-size: 14px;
+        font-weight: lighter;
+        line-height: 22px;
+      }
+
+      .home-div-social-media-links {
+        margin-top: 30px;
+        position: absolute;
+        padding-left: 45%;
+      }
+      
+      .home-div-social-media-icon {
+        height: 20px;
+        width: 20px;
+      }
+    }
+
     /* start background skytrain styles and animation */
 
     .skytrain-bg {
-        position: absolute;
-        width: 60%;
+      position: absolute;
+      width: 60%; 
+    }
 
-        #skytrain-canada-bg {
-            left: -1%;
-            top: -10%;
-        }
-          #skytrain-expo-bg {
-            bottom: -40%;
-            right: -30%;
-          }
+    #skytrain-expo-bg {
+      bottom: -40%;
+      right: -30%;
+
+      #expo-train {
+        position:relative;
+        -webkit-animation: diagonal-up 10s infinite;
+        -moz-animation: diagonal-up 10s infinite;
+        -o-animation: diagonal-up 10s infinite;
+        animation: diagonal-up 10s infinite;
+      }
+      @-webkit-keyframes diagonal-up {
+        100%       { transform: translatex(1200px) translatey(-720px) }
+        0%      { transform: translatex(-3200px) translatey(1800px); }
+      }
+      @-moz-keyframes diagonal-up {
+        100%       { transform: translatex(1200px) translatey(-720px) }
+        0%      { transform: translatex(-3200px) translatey(1800px); }
+      }
+      @-o-keyframes diagonal-up {
+        100%       { transform: translatex(1200px) translatey(-720px) }
+        0%      { transform: translatex(-3200px) translatey(1800px); }
+      }
+      @keyframes diagonal-up {
+        100%       { transform: translatex(1200px) translatey(-720px) }
+        0%      { transform: translatex(-3200px) translatey(1800px); }
+      }
+    }
+
+    #skytrain-canada-bg {
+      left: -1%;
+      top: -10%;
+
+      #canada-train {
+        position:relative;
+        -webkit-animation: diagonal-down 10s infinite;
+        -moz-animation: diagonal-down 10s infinite;
+        -o-animation: diagonal-down 10s infinite;
+        animation: diagonal-down 10s infinite;
+      }
+      @-webkit-keyframes diagonal-down {
+        0%       { transform: translatex(1200px) translatey(-720px) }
+        100%      { transform: translatex(-3200px) translatey(1800px); }
+      }
+      @-moz-keyframes diagonal-down {
+        0%       { transform: translatex(1200px) translatey(-720px) }
+        100%      { transform: translatex(-3200px) translatey(1800px); }
+      }
+      @-o-keyframes diagonal-down {
+        0%       { transform: translatex(1200px) translatey(-720px) }
+        100%      { transform: translatex(-3200px) translatey(1800px); }
+      }
+      @keyframes diagonal-down {
+        0%       { transform: translatex(1200px) translatey(-720px) }
+        100%      { transform: translatex(-3200px) translatey(1800px); }
+      }
     }
   
     @media (max-width: 800px){
@@ -29,54 +281,65 @@
         }
     }
   
-  #canada-train {
-    position:relative;
-    -webkit-animation: diagonal-down 10s infinite;
-    -moz-animation: diagonal-down 10s infinite;
-    -o-animation: diagonal-down 10s infinite;
-    animation: diagonal-down 10s infinite;
-  }
-  @-webkit-keyframes diagonal-down {
-    0%       { transform: translatex(1200px) translatey(-720px) }
-    100%      { transform: translatex(-3200px) translatey(1800px); }
-  }
-  @-moz-keyframes diagonal-down {
-    0%       { transform: translatex(1200px) translatey(-720px) }
-    100%      { transform: translatex(-3200px) translatey(1800px); }
-  }
-  @-o-keyframes diagonal-down {
-    0%       { transform: translatex(1200px) translatey(-720px) }
-    100%      { transform: translatex(-3200px) translatey(1800px); }
-  }
-  @keyframes diagonal-down {
-    0%       { transform: translatex(1200px) translatey(-720px) }
-    100%      { transform: translatex(-3200px) translatey(1800px); }
-  }
   
-  #expo-train {
-    position:relative;
-    -webkit-animation: diagonal-up 10s infinite;
-    -moz-animation: diagonal-up 10s infinite;
-    -o-animation: diagonal-up 10s infinite;
-    animation: diagonal-up 10s infinite;
-  }
-  @-webkit-keyframes diagonal-up {
-    100%       { transform: translatex(1200px) translatey(-720px) }
-    0%      { transform: translatex(-3200px) translatey(1800px); }
-  }
-  @-moz-keyframes diagonal-up {
-    100%       { transform: translatex(1200px) translatey(-720px) }
-    0%      { transform: translatex(-3200px) translatey(1800px); }
-  }
-  @-o-keyframes diagonal-up {
-    100%       { transform: translatex(1200px) translatey(-720px) }
-    0%      { transform: translatex(-3200px) translatey(1800px); }
-  }
-  @keyframes diagonal-up {
-    100%       { transform: translatex(1200px) translatey(-720px) }
-    0%      { transform: translatex(-3200px) translatey(1800px); }
-  }
+  
+  
   /* end background skytrain styles and animation */
+  }
+
+  p {
+    line-height: 2;
+    font-size: 1.06rem;
+    max-width: 46rem;
+    color: #4B618D;
+  }
+
+  
 
 
+  .pillar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em 0;
+
+    p {
+      margin: 0;
+    }
+    
+  }
+
+  #events {
+    max-width: 60rem;
+    margin: auto;
+
+    .title {
+      font-size: 2.4em; 
+    }
+
+    p {
+      margin-bottom: 2em;
+      color: #4B618D;
+    }
+
+    .double {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 1em;
+      max-width: 60rem;
+  
+      .emp {
+        font-size: 1.6rem;
+      }
+    
+    }
+  }
 }
