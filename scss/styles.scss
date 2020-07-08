@@ -447,4 +447,148 @@ body {
         margin-right: 8vw; } }
     
   }
+
+  #ispeakers {
+    background: -webkit-linear-gradient(to right, rgba(203, 103, 240, 0.8), rgba(5, 143, 250, 0.8)), url(../images/views/uwineng.jpg);
+    background: -o-linear-gradient(to right, rgba(203, 103, 240, 0.8), rgba(5, 143, 250, 0.8)), url(../images/views/uwineng.jpg);
+    background: linear-gradient(to right, rgba(203, 103, 240, 0.8), rgba(5, 143, 250, 0.8)), url(../images/views/uwineng.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 2px 6px rgba(75, 97, 141, 0.24);
+    color: #FAFAFA;
+
+    p {
+      color: #FAFAFA !important;
+    }
+
+    .title {
+      font-size: 2.4em;
+    }
+
+    .imggroup {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1em;
+
+      .imgbox {
+        width: 25vw;
+        min-width: 300px;
+        min-height: 360px;
+        font-family: "Oswald", sans-serif;
+        font-size: 1.2em;
+        letter-spacing: 1px;
+        box-shadow: 2px 3px 8px rgba(18, 19, 22, 0.938);
+        text-shadow: 2px 2px 4px rgb(13, 14, 15);
+        position: relative;
+        margin: 1em 0.5em;
+
+        h6 {
+          font-size: 1.5em;
+          position: absolute;
+          bottom: 0em;
+          left: 1em;
+        }
+
+        h5 {
+          position: absolute;
+          bottom: 0.5em;
+          left: 1em;
+        }
+
+        .imggroup .imgbox h4 {
+          font-size: 1.5em;
+          position: absolute;
+          bottom: 1.1em;
+          left: 0.85em;
+        }
+
+        #desc {
+          font-size: 0.75em;
+          line-height: 1.2;
+        }
+
+
+
+
+      }
+    }
+
+    #ispeakersbox {
+      .imgbox {
+        .btn {
+          color: white;
+          margin-top: 23.15em;
+          margin-left: 1em;
+        }
+
+        .btn:hover {
+          border-color: #67DDA6;
+          color: #67DDA6;
+          box-shadow: none;
+        }
+
+        h5{
+          margin-bottom: 3em;
+        }
+
+      }
+
+      // start imgbox styles
+      .imgbox:first-child {
+        background: -webkit-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/George.jpg);
+        background: -o-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/George.jpg);
+        background: linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/George.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 2px 6px rgba(11, 11, 12, 0.432);
+      }
+
+      .imgbox:nth-child(2) {
+        background: -webkit-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/Emily.jpg);
+        background: -o-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/Emily.jpg);
+        background: linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/Emily.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 2px 6px rgba(11, 11, 12, 0.432);
+      }
+
+      .imgbox:nth-child(3) {
+        background: -webkit-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/Rino.jpg);
+        background: -o-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/Rino.jpg);
+        background: linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/Rino.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 2px 6px rgba(11, 11, 12, 0.432);
+      }
+
+      .imgbox:nth-child(4) {
+        background: -webkit-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/YumYumRamen.jpg);
+        background: -o-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/YumYumRamen.jpg);
+        background: linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/YumYumRamen.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 2px 6px rgba(11, 11, 12, 0.432);
+      }
+
+      .imgbox:nth-child(5){
+        background: -webkit-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/kobti.jpg);
+        background: -o-linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/kobti.jpg);
+        background: linear-gradient(to right, rgba(203, 103, 240, 0.4), rgba(5, 143, 250, 0.4)), url(../images/guests/kobti.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 2px 6px rgba(11, 11, 12, 0.432);
+      }
+
+
+
+
+
+      // end imgbox styles
+
+
+    }
+  }
 }
