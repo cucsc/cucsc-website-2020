@@ -12,6 +12,7 @@
   color: #FAFAFA;
   height: 120vh;
   overflow: hidden;
+  font-family: 'Lato', sans-serif;
   }
 
 /* start background skytrain styles and animation */
@@ -184,7 +185,6 @@
 
 .home-div-header {
   font-size: 28px;
-  font-weight: lighter;
 }
 
 .home-div-logo {
@@ -195,7 +195,6 @@
 
 .home-div-text {
   font-size: 14px;
-  font-weight: lighter;
   line-height: 22px;
 }
 
